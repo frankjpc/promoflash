@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import Feed from './pages/Feed';
 import Categories from './pages/Categories';
@@ -60,7 +60,7 @@ const RootRedirect = () => {
 function App() {
   return (
     <AuthProvider>
-      <BrowserRouter>
+      <Router>
         <Routes>
           <Route path="/" element={<RootRedirect />} />
           <Route path="/login" element={<Login />} />
@@ -96,7 +96,7 @@ function App() {
             </ProtectedRoute>
           } />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </AuthProvider>
   );
 }
