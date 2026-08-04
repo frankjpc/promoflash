@@ -1,0 +1,190 @@
+.qr-container {
+  background-color: var(--primary-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.center-content {
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  gap: 1rem;
+}
+
+.qr-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+}
+
+.back-btn {
+  color: white;
+}
+
+.back-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.header-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.qr-content {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-card {
+  background-color: white;
+  border-radius: var(--radius-xl);
+  padding: 2rem 1.5rem;
+  width: 100%;
+  max-width: 340px;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.qr-offer-info {
+  margin-bottom: 2rem;
+}
+
+.qr-store {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.qr-product {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 0.25rem;
+}
+
+.qr-code-wrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+
+.anti-fraud-pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 220px;
+  border-radius: var(--radius-md);
+  background: transparent;
+  animation: pulse-ring 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+  z-index: 1;
+}
+
+.qr-box {
+  position: relative;
+  z-index: 2;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  padding: 0.5rem;
+  border-radius: var(--radius-md);
+}
+
+.qr-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.alpha-code-section {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.alpha-code-label {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.alpha-code-box {
+  background-color: var(--bg-color);
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  font-family: monospace;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.1em;
+  border: 1px dashed var(--border-color);
+}
+
+.live-clock {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: monospace;
+  font-size: 1.125rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.clock-icon {
+  color: var(--primary-color);
+}
+
+.security-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  color: var(--success-color);
+  font-weight: 500;
+  background-color: rgba(16, 185, 129, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+}
+
+.text-success {
+  color: var(--success-color);
+}
+
+.instructions {
+  margin-top: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  max-width: 340px;
+}
+
+.instructions h4 {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+  opacity: 0.8;
+}
+
+.instructions ol {
+  padding-left: 1.25rem;
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
